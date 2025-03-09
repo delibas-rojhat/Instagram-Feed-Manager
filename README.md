@@ -36,7 +36,7 @@ Users can sort their own posts based on the number of likes.
 
 If two posts have the same number of likes, the one with the larger lexicographical ID appears first.
 
-## Input & Output
+# Input & Output
 
 The program processes an input file containing user commands.
 
@@ -45,20 +45,32 @@ A log file is generated to record the operations and their results.
 ## Example Commands
 
 create_user user1
+
 follow_user user1 user2
+
 create_post user1 post1 Hello
+
 see_post user2 post1
+
 generate_feed user1 5
+
 sort_posts user1
+
 
 ## Example Log Output
 
 Created user with Id user1.
+
 user1 followed user2.
+
 user1 created a post with Id post1.
+
 user2 saw post1.
+
 Feed for user1:
+
 Post ID: post1, Author: user2, Likes: 0
+
 
 ## Implementation Details
 
